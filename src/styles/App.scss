@@ -1,2 +1,120 @@
 @import './core/reset.scss';
 @import './core/variables.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.page {
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .filter {
+    &__select {
+      margin-left: 0.1rem;
+      padding: 0.25rem 0;
+      width: 15rem;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all ease 0.25s;
+
+      &:hover {
+        border: 1px solid #ddd;
+      }
+    }
+  }
+}
+
+.club {
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+    width: 15rem;
+    margin: 0 1rem 1rem 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+  }
+
+  &__name {
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  &__remove-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0 6px 2px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f65314;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      background-color: #ea4335;
+    }
+  }
+}
+
+.new-club {
+  &__form {
+    margin-top: 5rem;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 0.75rem;
+
+    &-text {
+      display: inline-block;
+      width: 15rem;
+    }
+  }
+
+  &__text {
+    padding: 0.15rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #666;
+    outline: none;
+  }
+
+  &__btn {
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #7cbb00;
+    font-weight: bold;
+    color: #fff;
+    &:hover {
+      background-color: #38a853;
+    }
+  }
+}
